@@ -1,5 +1,5 @@
 .stol {
-    width: 80%;
+    width: 92%;
     margin: auto;
     background-color: white;
     margin-top: 20px;
@@ -13,4 +13,7 @@
     color: white;
     border-radius: 50px;
     font-size: 15px;
+}
+.imgIcons{
+    width: 20px;
 }

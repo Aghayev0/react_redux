@@ -31,8 +31,8 @@ export const Table = () => {
           coins.map((coin) => (
             <tr >
               <th>{coin.market_cap_rank}</th>
-              <td>{coin.name}</td>
-              <td>{coin.current_price}</td>
+              <td><img className='imgIcons' alt='yoxdu' src={coin.image}/>{coin.name}</td>
+              <td >${coin.current_price}</td>
               <td style={coin.price_change_percentage_24h > 0 ? { color: "green" } : { color: "red" }}>{coin.price_change_percentage_24h}{coin.price_change_percentage_24h > 0 ? <i className="fa-solid fa-arrow-trend-up" /> : <i className="fa-solid fa-arrow-trend-down" />}</td>
               <td style={{ color: "grey" }} >{coin.market_cap}</td>
               <td><button className='addBtn' onClick={()=>{
